@@ -199,7 +199,28 @@
                 <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
               </div>
               <div class="card-actions">
-                <button class="btn btn-active btn-link">Details</button>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="btn btn-active btn-link" onclick="my_modal_1.showModal()">Details</button>
+                <dialog id="my_modal_1" class="modal">
+                  <form method="dialog" class="modal-box">
+                    <img class="ml-44" src="images/fruit6.png" alt="">
+                    <h3 class="font-bold text-lg">Apples</h3>
+                    <p class="py-4">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                    <div class="rating">
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                      <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                    </div>
+                    <div class="modal-action justify-center">
+                      <!-- if there is a button in form, it will close the modal -->
+                      <button class="btn btn-outline btn-error">Close</button>
+                      <button class="btn btn-error">Buy Now</button>
+                    </div>
+                  </form>
+                </dialog>
+                <!-- <button class="btn btn-active btn-link">Details</button> -->
               </div>
             </div>
           </div>
@@ -462,21 +483,21 @@
       <img class="mt-10" src="images/logo.png" alt="">
       <h1 class="text-white mt-14">Fruit Burst</h1>
     </div>
-      <div class="flex justify-center gap-16">
-        <ul class="flex justify-center gap-20 text-white">
-          <li>Home </li>
-          <li>About us</li>
-          <li>Shop</li>
-          <li>All fruits</li>
-          <li>Support </li>
-          <li>My account</li>
-        </ul>
-      </div>
-      <div class="flex justify-center gap-5">
-        <img src="facebook 1.svg" alt="">
-        <img src="twitter (1) 1.svg" alt="">
-        <img src="linkedin 1 (1).svg" alt="">
-      </div>
+    <div class="flex justify-center gap-16">
+      <ul class="flex justify-center gap-20 text-white">
+        <li>Home </li>
+        <li>About us</li>
+        <li>Shop</li>
+        <li>All fruits</li>
+        <li>Support </li>
+        <li>My account</li>
+      </ul>
+    </div>
+    <div class="flex justify-center gap-5">
+      <img src="facebook 1.svg" alt="">
+      <img src="twitter (1) 1.svg" alt="">
+      <img src="linkedin 1 (1).svg" alt="">
+    </div>
   </footer>
 </body>
 
